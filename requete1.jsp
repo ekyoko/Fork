@@ -7,10 +7,10 @@
     List<Film> film = FilmDAO.getFilm(); // Assurez-vous d'adapter cela à votre modèle de données
 
     // Filtrer les films dont l'année est supérieure à 2000
-    List<Film> filmsFiltres = new ArrayList<>();
-    for (Film films : film) {
-        if (films.getAnnee() > 2000) {
-            filmsFiltres.add(film);
+    List<Film> filmFiltre = new ArrayList<>();
+    for (Film film : film) {
+        if (film.getAnnee() > 2000) {
+            filmFiltres.add(film);
         }
     }
 %>
@@ -23,7 +23,6 @@
 <body>
     <h1>Films dont l'année est supérieure à 2000</h1>
 
-    <table border="1">
         <tr>
             <th>ID</th>
             <th>Titre</th>
@@ -36,6 +35,5 @@
                 <td><%= film.getAnnee() %></td>
             </tr>
         <% } %>
-    </table>
 </body>
 </html>
