@@ -4,13 +4,13 @@
 
 <%
     // Récupérer la liste des films depuis la base de données ou une source de données
-    List<Film> film = FilmDAO.getFilm(); // Assurez-vous d'adapter cela à votre modèle de données
+    List<Film> films = FilmDAO.getFilm(); // Assurez-vous d'adapter cela à votre modèle de données
 
     // Filtrer les films dont l'année est supérieure à 2000
-    List<Film> filmFiltre = new ArrayList<>();
-    for (Film film : film) {
-        if (film.getAnnee() > 2000) {
-            filmFiltres.add(film);
+    List<Film> filmsFiltre = new ArrayList<>();
+    for (Film films : film) {
+        if (films.getAnnee() > 2000) {
+            filmsFiltres.add(film);
         }
     }
 %>
