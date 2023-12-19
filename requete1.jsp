@@ -11,7 +11,7 @@
     // Filtrer les films dont l'année est antérieure à 2000
     List<Film> filmsAvant2000 = new ArrayList<>();
     for (Film film : films) {
-        if (film.getAnnee() < 2000) {
+        if (film.getAnnée() < 2000) {
             filmsAvant2000.add(film);
         }
     }
