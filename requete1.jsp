@@ -3,8 +3,6 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Iterator" %>
 
-<%@ page import="votre.package.Film" %>
-<%@ page import="votre.package.FilmDAO" %>
 
 <%
     // Récupérer la liste des films depuis la base de données ou une source de données
