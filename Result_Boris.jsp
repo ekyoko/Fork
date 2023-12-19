@@ -8,14 +8,12 @@
 
 <%
     // Récupération de la valeur POST
-    String nomUtilisateur = request.getParameter("saisie");
+    String SaisieUser = request.getParameter("saisie");
+    //Conversion en int
+    int annee;
+    annee = Integer.parseInt(SaisieUser);
+    out.println("<p>Valeur Utilisateur : " + annee + "</p>");
 
-    // Vérification si la valeur est présente
-    if (nomUtilisateur != null && !nomUtilisateur.isEmpty()) {
-        out.println("<p>Valeur Utilisateur : " + nomUtilisateur + "</p>");
-    } else {
-        out.println("<p>Aucun nom d'utilisateur reçu.</p>");
-    }
 %>
 
 </body>
